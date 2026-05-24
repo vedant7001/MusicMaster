@@ -20,7 +20,7 @@ const RoleProtectedRoute: React.FC<RoleProtectedRouteProps> = ({ requiredRole, c
   }
   
   if (user.role !== requiredRole) {
-    return <Navigate to="/dashboard\" replace />;
+    return <Navigate to="/dashboard" replace />;
   }
   
   return <>{children}</>;
